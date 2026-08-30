@@ -232,6 +232,19 @@ operational-risk rules."
 Do not say that all work orders are active unless the data
 explicitly supports that conclusion.
 
+For date phrases:
+
+- "this quarter" = current calendar quarter.
+- Do not ask the user to choose calendar vs fiscal unless fiscal
+  reporting is explicitly mentioned.
+- Current quarter should be computed from today's date.
+
+For unavailable dimensions:
+
+- If the requested field is missing from the dataset, do not ask the
+  user to invent a classification.
+- State that the field is unavailable and cannot be reliably inferred.
+
 DATA CONTEXT:
 """
             + json.dumps(
